@@ -1,0 +1,16 @@
+body{
+
+    background-color: #5112b6;
+}
+
+section{
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+h1, p{
+    color: #fff;
+    font-size: 40px;
+}
