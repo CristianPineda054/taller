@@ -1,15 +1,9 @@
-let contador = 0;
-const spanContador = document.getElementById("contador");
-let reset = document.querySelector("button[onclick='resetContador()']");
 
 
-function incrementarContador() {
-    contador++;
-    spanContador.textContent = contador;
-
+function guardar(){
+    const nombre = document.getElementById("nombre").value;
+    sessionStorage.setItem("nombre", nombre);
+    window.location.href = "index2.html";
 }
 
-function resetContador() {
-    contador = 0;
-    spanContador.textContent = contador;
-}
+document.getElementById("btn-guardar").addEventListener("click", guardar);

@@ -1,16 +1,72 @@
-body{
-
-    background-color: #5112b6;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow-y: auto;
 }
 
-section{
+section {
+    background-color: #1e293b;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #334155;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px rgb(20, 20, 133);
+    width: 100%;
+    max-width: 1100px;
+    color: aliceblue;
+    align-items: center;
     text-align: center;
-    margin-top: 100px;
-    border-radius: 10px;
-    border: 2px solid #fff;
 }
 
-h1, p{
+h1,p {
     color: #fff;
     font-size: 40px;
+}
+
+nav {
+    background-color: #1e293b;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #334155;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px rgb(20, 20, 133);
+    width: 100%;
+    max-width: 1100px;
+    color: rgb(251, 251, 252);
+    align-items: center;
+    text-align: right;
+}
+
+#buttons {
+    background-color: #1e293b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn-guardar {
+    background-color: #1e293b;
+    color: #fff;
+    border: none;
+    padding: 4px  20px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
