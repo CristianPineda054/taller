@@ -18,16 +18,18 @@ function resetContador() {
 
 
 function mostrarNombre() {
-    const nombre = sessionStorage.getItem("nombre");
+    const nombre = localStorage.getItem("nombre");
+    const cuidad = localStorage.getItem("cuidad");
     if (nombre === null) {
         document.getElementById("saludo").textContent = "No hay ningún nombre guardado.";
     } else {
-        document.getElementById("saludo").textContent = "Hola, " + nombre;
+        document.getElementById("saludo").textContent = "Hola, " + nombre + " de " + cuidad;
     }
 }
 
 function borrar() {
-    sessionStorage.removeItem("nombre");
+    localStorage.removeItem("nombre");
+    localStorage.removeItem("cuidad");
     mostrarNombre();
 }
 
